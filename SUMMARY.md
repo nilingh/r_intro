@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [序言](preface/README_pre.md)
     * [对读者的建议](preface/section0_1.md)
     * [译者前言一(摘自05年网页版)](preface/section0_2.md)
