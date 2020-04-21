@@ -9,4 +9,5 @@
 * 简单的算术操作和向量运算
     * [逻辑向量](chapter2/section2_4.md)
     * [缺损值](chapter2/section2_5.md)
+    * [字符向量](/chapter2/section2_6.md)
 
