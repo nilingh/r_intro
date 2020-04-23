@@ -10,4 +10,4 @@
     * [2.4 逻辑向量](chapter2/section2_4.md)
     * [2.5 缺损值](chapter2/section2_5.md)
     * [2.6 字符向量](/chapter2/section2_6.md)
-
+    * [2.7 索引向量；选出和修改一个数据集的子集](/chapter2/section2_7.md)
