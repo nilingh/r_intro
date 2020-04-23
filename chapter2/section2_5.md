@@ -24,13 +24,9 @@
 
 得到的都是 `NaN`，这是因为它们的结果都不能被显式的定义。
 
-In summary, `is.na(xx)` is `TRUE` *both* for `NA` and `NaN` values. To differentiate these, `is.nan(xx)` is only `TRUE` for `NaN`s.
-
-Missing values are sometimes printed as `` when character vectors are printed without quotes.
-
 &emsp;&emsp;总之，对于 `NA` 和 `NaN` 用 `is.na(xx)` 检验都是 `TRUE`。为了区分它们，`is.nan(xx)` 就只对是 `NaN` 的元素显示 `TRUE`。 
 
-&emsp;&emsp;当字符向量以没有引号的形式输出时，缺损值可能会以 \<NA\> 形式输出[^2]。
+&emsp;&emsp;当字符向量以没有引号的形式输出时，缺损值[^2]可能会以 \<NA\> 形式输出。
 
 ```R
 > a <- c("a","b",NA)
@@ -40,7 +36,9 @@ Missing values are sometimes printed as `` when character vectors are printed wi
 [1] a b <NA>
 ```
 
+
+
 ---
 
-[^1]: 译者(丁国徽)注：我在0.01β版里面用缺省值这个汉语概念来描述这种数据, PDF版本里面改用缺损值描述。 这样可能更为准确一点。
-[^2]: 译者(丁国徽)注：下面例子由黄荣贵网友提供。
+[^1]:译者(丁国徽)注：我在0.01β版里面用缺省值这个汉语概念来描述这种数据，PDF版本里面改用缺损值描述。 这样可能更为准确一点。
+[^2]:译者(丁国徽)注：下面例子由黄荣贵网友提供。
