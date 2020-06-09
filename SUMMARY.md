@@ -31,8 +31,6 @@
 
     * [1.11 永久数据和对象删除](chapter1/section1_11.md)
 
-      
-
 * [2 简单的算术操作和向量运算](chapter2/README_ch2.md)
   
     * [2.1 向量和赋值](chapter2/section2_1.md)
@@ -46,8 +44,8 @@
     
 * [3 对象及它们的模式和属性](chapter3/README_ch3.md)
 
-    * [3.1 内在属性：模式和长度](chapter/section3_1.md)
-* [3.2 改变对象长度](chapter3/section3_2.md)
+    * [3.1 内在属性：模式和长度](chapter3/section3_1.md)
+    * [3.2 改变对象长度](chapter3/section3_2.md)
     * [3.3 读取和设置属性](chapter3/section3_3.md)
     * [3.4 对象的类](chapter3/section3_4.md)
     

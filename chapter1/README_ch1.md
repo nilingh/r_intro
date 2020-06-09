@@ -2,7 +2,6 @@
 
 * [1.1 R 环境](chapter1/section1_1.md)
 * [1.2 R 相关软件和文档](chapter1/section1_2.md)
-
 * [1.3 R 和统计](chapter1/section1_3.md)
 
 * [1.4 R 和桌面系统](chapter1/section1_4.md)
