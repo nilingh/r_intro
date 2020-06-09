@@ -3,7 +3,7 @@
 * [简介](README.md)
 
 * [序言](preface/README_pre.md)
-    
+  
     * [译者前言一(摘自05年网页版)](preface/section0_2.md)
     * [译者前言二(摘自PDF版)](preface/section0_3.md)
     
@@ -34,7 +34,7 @@
       
 
 * [2 简单的算术操作和向量运算](chapter2/README_ch2.md)
-    
+  
     * [2.1 向量和赋值](chapter2/section2_1.md)
     * [2.2 向量运算](chapter2/section2_2.md)
     * [2.3 生成正则序列](chapter2/section2_3.md)
@@ -43,5 +43,12 @@
     * [2.6 字符向量](/chapter2/section2_6.md)
     * [2.7 索引向量；选出和修改一个数据集的子集](/chapter2/section2_7.md)
     * [2.8 其他类型的对象](/chapter2/section2_8.md)
+    
+* [3 对象及它们的模式和属性](chapter3/README_ch3.md)
+
+    * [3.1 内在属性：模式和长度](chapter3_1.md)
+* [3.2 改变对象长度](chapter3_2.md)
+    * [3.3 读取和设置属性](chapter3_3.md)
+    * [3.4 对象的类](chapter3_4.md)
     
     
