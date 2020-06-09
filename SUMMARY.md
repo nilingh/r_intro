@@ -33,7 +33,7 @@
 
       
 
-* 2 简单的算术操作和向量运算
+* [2 简单的算术操作和向量运算](chapter2/README_ch2.md)
     
     * [2.1 向量和赋值](chapter2/section2_1.md)
     * [2.2 向量运算](chapter2/section2_2.md)
