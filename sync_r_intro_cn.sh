@@ -3,6 +3,8 @@
 
 gitbook build
 
+cp _book/* ./docs/
+
 git add .
 
 git commit -m "add by script"
