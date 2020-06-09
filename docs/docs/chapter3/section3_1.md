@@ -1,35 +1,46 @@
-### 3.1 Intrinsic attributes: mode and length
+# 3.1 内在属性：模式和长度
 
-The entities R operates on are technically known as *objects*. Examples are vectors of numeric (real) or complex values, vectors of logical values and vectors of character strings. These are known as “atomic” structures since their components are all of the same type, or *mode*, namely *numeric*[10](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#FOOT10), *complex*, *logical*, *character* and *raw*.
+R 操作的实体在技术上来说就是对象(object)。实数或复数向量，逻辑向量和字符串向量之类的对象属于“原子”(atomic)型的对象，因为它们的元素都是一样的类型或模式[^1]。 R 的对象类型包括*数值型(numeric)*[^2]，*复数型(complex)*，*逻辑型 (logical)*，*字符型(character)*和*原味型(raw)*。
 
-Vectors must have their values *all of the same mode*. Thus any given vector must be unambiguously either *logical*, *numeric*, *complex*, *character* or *raw*. (The only apparent exception to this rule is the special “value” listed as `NA` for quantities not available, but in fact there are several types of `NA`). Note that a vector can be empty and still have a mode. For example the empty character string vector is listed as `character(0)` and the empty numeric vector as `numeric(0)`.
+向量必须保证它的所有元素是一样的模式。因此任何给定的向量必须明确属于逻辑性，数值型，复数型，字符型或者原味型。(这里有个特定的例外就是“值”为 `NA` 的元素。实际上 `NA` 有好几种形式的)。注意空向量也有自己的模式。例如，空的字符串向量将会被显示 `character(0)` 和空的数值向量显示为 `numeric(0)`。
 
-R also operates on objects called *lists*, which are of mode *list*. These are ordered sequences of objects which individually can be of any mode. *lists* are known as “recursive” rather than atomic structures since their components can themselves be lists in their own right.
+R 同样操作被称为列表的对象。这种对象在 R 里面是一种列表(`list`)模式。列表可以为任何模式的对象的有序序列。列表被认为是一种“递归”结构而不是原子结构因为它们的元素可以以它们各自的方式单独列出。
 
-The other recursive structures are those of mode *function* and *expression*. Functions are the objects that form part of the R system along with similar user written functions, which we discuss in some detail later. Expressions as objects form an advanced part of R which will not be discussed in this guide, except indirectly when we discuss *formulae* used with modeling in R.
+另外两种递归结构是*函数(function)*和*表达式(expression)*。构成 R 系统的函数对象以及其他类似的用户定义的函数对象都将在后面的内容中深入讨论。表达 式对象是 R 的高级部分，不是本文档的重点，我们只是在讨论 R 统计建模中的*公式(formulae)*时间接地提一下。
 
-By the *mode* of an object we mean the basic type of its fundamental constituents. This is a special case of a “property” of an object. Another property of every object is its *length*. The functions `mode(object)` and `length(object)` can be used to find out the mode and length of any defined structure [11](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#FOOT11).
+一个对象的*模式(mode)*是该对象基本要素的类型。这是专门用来描述一个对象“特征”(property)的术语。另外一个所有对象都有的特征是*长度(length)*。函数 `mode(object)` 和 `length(object)` 可用于任何数据对象以得到其模式和长度[^3]。
 
-Further properties of an object are usually provided by `attributes(object)`, see [Getting and setting attributes](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Getting-and-setting-attributes). Because of this, *mode* and *length* are also called “intrinsic attributes” of an object.
+一个对象更详细的特征常常通过 `attributes(object)` 得到，具体参见返回和设定对象属性。正因为这样，模式和长度又叫做一个对象的“内在属性”。
 
-For example, if `z` is a complex vector of length 100, then in an expression `mode(z)` is the character string `"complex"` and`length(z)` is `100`.
+例如，如果 z 是一个长为100的复数向量，那么命令 `mode(z)` 就会得到字符 串 "complex" 而 `length(z)` 对应的是100。
 
-R caters for changes of mode almost anywhere it could be considered sensible to do so, (and a few where it might not be). For example with
+R 可以在任何需要的时候对模式进行转换(当然，有些时候没有必要)。例如
 
-```
+```R
 > z <- 0:9
 ```
 
-we could put
+我们可以进行如下转换
 
-```
+```R
 > digits <- as.character(z)
 ```
 
-after which `digits` is the character vector `c("0", "1", "2", …, "9")`. A further *coercion*, or change of mode, reconstructs the numerical vector again:
+这样，`digits` 就是一个字符向量 `c("0", "1", "2", ..., "9")`。我们可以再一次强制转换，或者说模式改变，以重建数值向量：
 
-```
+```R
 > d <- as.integer(digits)
 ```
 
-Now `d` and `z` are the same.[12](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#FOOT12) There is a large collection of functions of the form `as.something()` for either coercion from one mode to another, or for investing an object with some other attribute it may not already possess. The reader should consult the different help files to become familiar with them.
+现在 `d` 和 `z` 就一样了[^4]。有一系列类似 `as.something()` 的函数，这些函数主要用于对象模式数据的强制转换，或者赋予某个对象一些先前没有的功能。读者可以参考不同 的帮助文档以熟悉它们。
+
+
+
+
+
+---
+
+[^1]:译者注:实际上 R 已经有自己独立的函数 `typeof()`，仍然保留模式的概念主要是为了和 S 兼容。
+[^2]:数值型模式实际上是两种独立模式的混合模式，即整数型(integer)和双精度型(double)。具体 可以参考手册。
+[^3]:注意 `length(object)` 有时会返回一些没有意义的信息，如在 object 是一个对象的时候。
+[^4]:许多时候，从数值到字符的强制转换，然后再转回不总是可逆的。因为在数字的字符表示时有近似 转换(roundoff)的问题。
