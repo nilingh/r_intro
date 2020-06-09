@@ -7,7 +7,7 @@
     * [译者前言一(摘自05年网页版)](preface/section0_2.md)
     * [译者前言二(摘自PDF版)](preface/section0_3.md)
     
-* 1 绪论
+* [1 绪论](chapter1/README_ch1.md)
 
     * [1.1 R 环境](chapter1/section1_1.md)
 
