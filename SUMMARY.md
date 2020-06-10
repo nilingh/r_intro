@@ -1,12 +1,10 @@
 # Summary
 
 * [简介](README.md)
-
 * [序言](preface/README_pre.md)
   
     * [译者前言一(摘自05年网页版)](preface/section0_2.md)
     * [译者前言二(摘自PDF版)](preface/section0_3.md)
-    
 * [1 绪论](chapter1/README_ch1.md)
 
     * [1.1 R 环境](chapter1/section1_1.md)
@@ -41,12 +39,12 @@
     * [2.6 字符向量](/chapter2/section2_6.md)
     * [2.7 索引向量；选出和修改一个数据集的子集](/chapter2/section2_7.md)
     * [2.8 其他类型的对象](/chapter2/section2_8.md)
-    
 * [3 对象及它们的模式和属性](chapter3/README_ch3.md)
-
-    * [3.1 内在属性：模式和长度](chapter3/section3_1.md)
+* [3.1 内在属性：模式和长度](chapter3/section3_1.md)
     * [3.2 改变对象长度](chapter3/section3_2.md)
     * [3.3 读取和设置属性](chapter3/section3_3.md)
     * [3.4 对象的类](chapter3/section3_4.md)
-    
-    
+* [4 有序因子和无序因子](chapter4/README_ch4.md)
+    * [4.1 一个特别的例子](chapter4/section4_1.md)
+    * [4.2 函数 tapply() 和不规则数组](chapter4/section4_2.md)
+    * [4.3 有序因子](chapter4/section4_3.md)

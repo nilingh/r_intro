@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.2 改变对象长度 · GitBook</title>
+        <title>4.3 有序因子 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="section3_3.html" />
     
-    
-    <link rel="prev" href="section3_1.html" />
+    <link rel="prev" href="section4_2.html" />
     
 
     </head>
@@ -432,9 +430,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="README_ch3.html">
+        <li class="chapter " data-level="1.5" data-path="../chapter3/README_ch3.html">
             
-                <a href="README_ch3.html">
+                <a href="../chapter3/README_ch3.html">
             
                     
                     3 对象及它们的模式和属性
@@ -445,9 +443,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="section3_1.html">
+        <li class="chapter " data-level="1.6" data-path="../chapter3/section3_1.html">
             
-                <a href="section3_1.html">
+                <a href="../chapter3/section3_1.html">
             
                     
                     3.1 内在属性：模式和长度
@@ -459,9 +457,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="section3_2.html">
+        <li class="chapter " data-level="1.6.1" data-path="../chapter3/section3_2.html">
             
-                <a href="section3_2.html">
+                <a href="../chapter3/section3_2.html">
             
                     
                     3.2 改变对象长度
@@ -472,9 +470,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="section3_3.html">
+        <li class="chapter " data-level="1.6.2" data-path="../chapter3/section3_3.html">
             
-                <a href="section3_3.html">
+                <a href="../chapter3/section3_3.html">
             
                     
                     3.3 读取和设置属性
@@ -485,9 +483,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" data-path="section3_4.html">
+        <li class="chapter " data-level="1.6.3" data-path="../chapter3/section3_4.html">
             
-                <a href="section3_4.html">
+                <a href="../chapter3/section3_4.html">
             
                     
                     3.4 对象的类
@@ -503,7 +501,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../chapter4/README_ch4.md">
+        <li class="chapter " data-level="1.7" data-path="README_ch4.md">
             
                 <span>
             
@@ -517,9 +515,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../chapter4/section4_1.html">
+        <li class="chapter " data-level="1.7.1" data-path="section4_1.html">
             
-                <a href="../chapter4/section4_1.html">
+                <a href="section4_1.html">
             
                     
                     4.1 一个特别的例子
@@ -530,9 +528,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../chapter4/section4_2.html">
+        <li class="chapter " data-level="1.7.2" data-path="section4_2.html">
             
-                <a href="../chapter4/section4_2.html">
+                <a href="section4_2.html">
             
                     
                     4.2 函数 tapply() 和不规则数组
@@ -543,9 +541,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="../chapter4/section4_3.html">
+        <li class="chapter active" data-level="1.7.3" data-path="section4_3.html">
             
-                <a href="../chapter4/section4_3.html">
+                <a href="section4_3.html">
             
                     
                     4.3 有序因子
@@ -591,7 +589,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >3.2 改变对象长度</a>
+        <a href=".." >4.3 有序因子</a>
     </h1>
 </div>
 
@@ -606,23 +604,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="32-&#x6539;&#x53D8;&#x5BF9;&#x8C61;&#x957F;&#x5EA6;">3.2 &#x6539;&#x53D8;&#x5BF9;&#x8C61;&#x957F;&#x5EA6;</h1>
-<p>&#x4E00;&#x4E2A;&#x201C;&#x7A7A;&#x201D;&#x7684;&#x5BF9;&#x8C61;&#x4ECD;&#x7136;&#x6709;&#x5176;&#x6A21;&#x5F0F;&#x7684;&#x3002;&#x4F8B;&#x5982;</p>
-<pre><code class="lang-R">&gt; e &lt;- numeric()
-</code></pre>
-<p>&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x6A21;&#x5F0F;&#x7684;&#x7A7A;&#x5411;&#x91CF;&#x7ED3;&#x6784; <code>e</code>&#x3002;&#x7C7B;&#x4F3C;&#x7684;&#x662F;&#xFF0C;<code>character()</code> &#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x5B57;&#x7B26;&#x5411;&#x91CF;&#xFF0C; &#x7B49;&#x7B49;&#x3002;&#x4E00;&#x65E6;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x957F;&#x5EA6;&#x7684;&#x5BF9;&#x8C61;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x65B0;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5728;&#x5148;&#x524D;&#x7D22;&#x5F15;&#x8303;&#x56F4;&#x5916; &#x7684;&#x7D22;&#x5F15;&#x503C;<sup><a href="#fn_1" id="reffn_1">1</a></sup>&#x800C;&#x52A0;&#x5165;&#x3002;&#x56E0;&#x6B64;</p>
-<pre><code class="lang-R">&gt; e[<span class="hljs-number">3</span>] &lt;- <span class="hljs-number">17</span>
-</code></pre>
-<p>&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;3&#x7684;&#x5411;&#x91CF; <code>e</code> (&#x6B64;&#x65F6;&#xFF0C;&#x524D;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F; <code>NA</code> )&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C; &#x5E76;&#x4E14;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x6DFB;&#x52A0;&#x548C;&#x7B2C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#x4E00;&#x81F4;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
-<p>&#x8FD9;&#x79CD;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x5BF9;&#x8C61;&#x957F;&#x5EA6;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#x7684;&#xFF0C;&#x5982;&#x7B49;&#x5F85;&#x8F93;&#x5165;&#x7684;&#x51FD;&#x6570; <code>scan()</code>&#x3002;( <code>scan()</code> &#x51FD;&#x6570;)</p>
-<p>&#x76F8;&#x53CD;&#xFF0C;&#x5220;&#x51CF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5927;&#x5C0F;&#x53EA;&#x9700;&#x8981;&#x7528;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C; <code>alpha</code> &#x662F;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;10&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;</p>
-<pre><code class="lang-R">&gt; alpha &lt;- alpha[<span class="hljs-number">2</span> * <span class="hljs-number">1</span>:<span class="hljs-number">5</span>]
-</code></pre>
-<p>&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7531;&#x5076;&#x6570;&#x7D22;&#x5F15;&#x4F4D;&#x503C;&#x4E0A;&#x7684;&#x5143;&#x7D20;&#x6784;&#x6210;&#x7684;&#x957F;&#x5EA6;&#x4E3A;5&#x7684;&#x5BF9;&#x8C61;(&#x6B64;&#x65F6;&#xFF0C;&#x8001;&#x7684;&#x7D22;&#x5F15;&#x5C06;&#x4F1A;&#x88AB;&#x629B; &#x5F03;)&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x4EC5;&#x4EC5;&#x4FDD;&#x7559;&#x8D77;&#x59CB;&#x7684;&#x4E09;&#x4E2A;&#x503C;</p>
-<pre><code class="lang-R">&gt; length(alpha) &lt;- <span class="hljs-number">3</span>
-</code></pre>
-<p>&#x4E00;&#x4E2A;&#x5411;&#x91CF;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x540C;&#x6837;&#x7684;&#x529E;&#x6CD5;&#x6269;&#x5145;(&#x6269;&#x5145;&#x90E8;&#x5206;&#x7528;&#x7F3A;&#x635F;&#x503C;)&#x3002;</p>
-<hr>
+                                <h1 id="43-&#x6709;&#x5E8F;&#x56E0;&#x5B50;">4.3 &#x6709;&#x5E8F;&#x56E0;&#x5B50;</h1>
+<p>&#x56E0;&#x5B50;&#x7684;&#x6C34;&#x5E73;&#x662F;&#x4EE5;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x7684;&#xFF0C;&#x6216;&#x8005;&#x663E;&#x5F0F;&#x5730;&#x5728; factor &#x4E2D;&#x6307;&#x5B9A;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x56E0;&#x5B50;&#x7684;&#x6C34;&#x5E73;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x81EA;&#x7136;&#x987A;&#x5E8F;&#x5E76;&#x4E14;&#x8FD9;&#x79CD;&#x987A;&#x5E8F;&#x662F;&#x6709;&#x610F;&#x4E49;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x4E0B; &#x6765;&#x53EF;&#x80FD;&#x5728;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x7EDF;&#x8BA1;&#x5206;&#x6790;&#x4E2D;&#x7528;&#x5230;&#x3002;&#x51FD;&#x6570; <code>ordered()</code> &#x5C31;&#x662F;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x8FD9;&#x79CD;&#x6709;&#x5E8F;&#x56E0;&#x5B50;&#x3002;&#x5728; &#x5176;&#x4ED6;&#x65B9;&#x9762;&#xFF0C;&#x51FD;&#x6570; <code>ordered()</code> &#x548C; <code>factor</code> &#x57FA;&#x672C;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x3002;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6709;&#x5E8F;&#x548C;&#x65E0;&#x5E8F;&#x56E0;&#x5B50;&#x7684;&#x552F;&#x4E00;&#x5DEE;&#x522B;&#x5728;&#x4E8E;&#x524D;&#x8005;&#x663E;&#x793A;&#x7684;&#x65F6;&#x5019;&#x53CD;&#x5E94;&#x4E86;&#x5404;&#x6C34;&#x5E73;&#x7684;&#x987A;&#x5E8F;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5728;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x62DF;&#x5408;&#x7684;&#x65F6; &#x5019;&#xFF0C;&#x4E24;&#x79CD;&#x56E0;&#x5B50;&#x5BF9;&#x5E94;&#x7684;&#x5BF9;&#x7167;&#x77E9;&#x9635;&#x7684;&#x610F;&#x4E49;&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x3002;</p>
 
                                 
                                 </section>
@@ -650,14 +634,10 @@
 
             
                 
-                <a href="section3_1.html" class="navigation navigation-prev " aria-label="Previous page: 3.1 内在属性：模式和长度">
+                <a href="section4_2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4.2 函数 tapply() 和不规则数组">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="section3_3.html" class="navigation navigation-next " aria-label="Next page: 3.3 读取和设置属性">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -666,7 +646,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2 改变对象长度","level":"1.6.1","depth":2,"next":{"title":"3.3 读取和设置属性","level":"1.6.2","depth":2,"path":"chapter3/section3_3.md","ref":"chapter3/section3_3.md","articles":[]},"previous":{"title":"3.1 内在属性：模式和长度","level":"1.6","depth":1,"path":"chapter3/section3_1.md","ref":"chapter3/section3_1.md","articles":[{"title":"3.2 改变对象长度","level":"1.6.1","depth":2,"path":"chapter3/section3_2.md","ref":"chapter3/section3_2.md","articles":[]},{"title":"3.3 读取和设置属性","level":"1.6.2","depth":2,"path":"chapter3/section3_3.md","ref":"chapter3/section3_3.md","articles":[]},{"title":"3.4 对象的类","level":"1.6.3","depth":2,"path":"chapter3/section3_4.md","ref":"chapter3/section3_4.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/section3_2.md","mtime":"2020-06-09T11:15:50.462Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-10T05:50:44.871Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.3 有序因子","level":"1.7.3","depth":2,"previous":{"title":"4.2 函数 tapply() 和不规则数组","level":"1.7.2","depth":2,"path":"chapter4/section4_2.md","ref":"chapter4/section4_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/section4_3.md","mtime":"2020-06-10T05:43:50.041Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-10T05:50:44.871Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
