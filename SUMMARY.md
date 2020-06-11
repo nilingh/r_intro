@@ -57,4 +57,9 @@
     * [5.5 数组的外积](chapter5/section5_5.md)
     * [5.6 数组的广义转置](chapter5/section5_6.md)
     * [5.7 矩阵工具](chapter5/section5_7.md)
-    * [5.7.1 矩阵相乘](chapter5/section5_7_1.md)
+        * [5.7.1 矩阵相乘](chapter5/section5_7_1.md)
+        * [5.7.2 线性方程和求逆](chapter5/section5_7_2.md)
+        * [5.7.3 特征值和特征向量](chapter5/section5_7_3.md)
+        * [5.7.4 奇异值分解和行列式](chapter5/section5_7_4.md)
+        * [5.7.5 最小二乘法拟合和QR 分解](chapter5/section5_7_5.md)
+
