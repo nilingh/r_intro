@@ -86,9 +86,7 @@
         * [6.3.2 attach() 和 detach()](chapter6/section6_3_2.md)
         * [6.3.3 使用数据框](chapter6/section6_3_3.md)
         * [6.3.4 绑定任意的列表](chapter6/section6_3_4.md)
-        * [6.3.5 管理搜索路径](chapter/section6_3_5.md)
-
-        
+        * [6.3.5 管理搜索路径](chapter6/section6_3_5.md)
 
         
 
