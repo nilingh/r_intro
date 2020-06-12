@@ -1,2 +1,18 @@
 # 5 数组和矩阵
 
+* [5.1 数组](chapter5/section5_1.md)
+* [5.2 数组索引以及数组分割](chapter5/section5_2.md)
+* [5.3 索引数组](chapter5/section5_3.md)
+* [5.4 array() 函数](chapter5/section5_4.md)
+  * [5.4.1 向量和数组混合运算以及循环使用原则](chapter5/section5_4_1.md)
+* [5.5 数组的外积](chapter5/section5_5.md)
+* [5.6 数组的广义转置](chapter5/section5_6.md)
+* [5.7 矩阵工具](chapter5/section5_7.md)
+  * [5.7.1 矩阵相乘](chapter5/section5_7_1.md)
+  * [5.7.2 线性方程和求逆](chapter5/section5_7_2.md)
+  * [5.7.3 特征值和特征向量](chapter5/section5_7_3.md)
+  * [5.7.4 奇异值分解和行列式](chapter5/section5_7_4.md)
+  * [5.7.5 最小二乘法拟合和QR分解](chapter5/section5_7_5.md)
+* [5.8 用 cbind() 和 rbind() 构建分块矩阵](chapter5/section5_8.md)
+* [5.9 对数组实现连接操作的函数 c()](chapter5/section5_9.md)
+* [5.10 因子的频率表](chapter5/section5_10.md)

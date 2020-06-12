@@ -1,10 +1,12 @@
 # Summary
 
 * [简介](README.md)
+
 * [序言](preface/README_pre.md)
   
     * [译者前言一(摘自05年网页版)](preface/section0_2.md)
     * [译者前言二(摘自PDF版)](preface/section0_3.md)
+    
 * [1 绪论](chapter1/README_ch1.md)
 
     * [1.1 R 环境](chapter1/section1_1.md)
@@ -39,15 +41,19 @@
     * [2.6 字符向量](/chapter2/section2_6.md)
     * [2.7 索引向量；选出和修改一个数据集的子集](/chapter2/section2_7.md)
     * [2.8 其他类型的对象](/chapter2/section2_8.md)
+    
 * [3 对象及它们的模式和属性](chapter3/README_ch3.md)
+
 * [3.1 内在属性：模式和长度](chapter3/section3_1.md)
     * [3.2 改变对象长度](chapter3/section3_2.md)
     * [3.3 读取和设置属性](chapter3/section3_3.md)
     * [3.4 对象的类](chapter3/section3_4.md)
+    
 * [4 有序因子和无序因子](chapter4/README_ch4.md)
     * [4.1 一个特别的例子](chapter4/section4_1.md)
     * [4.2 函数 tapply() 和不规则数组](chapter4/section4_2.md)
     * [4.3 有序因子](chapter4/section4_3.md)
+    
 * [5 数组和矩阵](chapter5/README_ch5.md)
     * [5.1 数组](chapter5/section5_1.md)
     * [5.2 数组索引以及数组分割](chapter5/section5_2.md)
@@ -62,4 +68,27 @@
         * [5.7.3 特征值和特征向量](chapter5/section5_7_3.md)
         * [5.7.4 奇异值分解和行列式](chapter5/section5_7_4.md)
         * [5.7.5 最小二乘法拟合和QR 分解](chapter5/section5_7_5.md)
+    * [5.8 用cbind() 和rbind() 构建分块矩阵](chapter5/section5_8.md)
+    * [5.9 对数组实现连接操作的函数c()](chapter5/section5_9.md)
+    * [5.10 因子的频率表](chapter5/section5_10.md)
+    
+* [6 列表和数据框](chapter6/README_ch6.md)
+
+    * [6.1 列表](chapter6_1.md)
+
+    * [6.2 构建和修改列表](chapter6_2.md)
+
+        * [6.2.1 列表连接](chapter6/section6_2_1.md)
+
+    * [6.3 数据框](chapter6/section6_3.md)
+
+        * [6.3.1 创建数据框](chapter6/section6_3_1.md)
+        * [6.3.2 attach() 和 detach()](chapter6/section6_3_2.md)
+        * [6.3.3 使用数据框](chapter6/section6_3_3.md)
+        * [6.3.4 绑定任意的列表](chapter6/section6_3_4.md)
+        * [6.3.5 管理搜索路径](chapter/section6_3_5.md)
+
+        
+
+        
 
