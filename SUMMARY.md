@@ -40,11 +40,13 @@
     * [3.4 对象的类](chapter3/section3_4.md)
     
 * [4 有序因子和无序因子](chapter4/README_ch4.md)
+
     * [4.1 一个特别的例子](chapter4/section4_1.md)
     * [4.2 函数 tapply() 和不规则数组](chapter4/section4_2.md)
     * [4.3 有序因子](chapter4/section4_3.md)
     
 * [5 数组和矩阵](chapter5/README_ch5.md)
+
     * [5.1 数组](chapter5/section5_1.md)
     * [5.2 数组索引以及数组分割](chapter5/section5_2.md)
     * [5.3 索引数组](chapter5/section5_3.md)
@@ -73,6 +75,3 @@
         * [6.3.3 使用数据框](chapter6/section6_3_3.md)
         * [6.3.4 绑定任意的列表](chapter6/section6_3_4.md)
         * [6.3.5 管理搜索路径](chapter6/section6_3_5.md)
-
-        
-
