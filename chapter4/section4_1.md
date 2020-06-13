@@ -34,5 +34,5 @@ Levels: act nsw nt qld sa tas vic wa
 
 ---
 
-[^1]:澳大利亚的8个州和行政区分别是 Australian Capital Territory, New South Wales, the Northern Territory, Queensland, South Australia, Tasmania, Victoria 和Western Australia。
-[^2]:译者注: 如果是汉字, 可能情况就复杂了ˆ ˆ。
+[^1]: 澳大利亚的8个州和行政区分别是 Australian Capital Territory, New South Wales, the Northern Territory, Queensland, South Australia, Tasmania, Victoria 和Western Australia。
+[^2]: 译者注: 如果是汉字, 可能情况就复杂了ˆ ˆ。

@@ -46,4 +46,4 @@
 
 ---
 
-[^1]:译者注: 原文是”It is also perhaps surprising that about 1 in 20 such matrices is singular.”
+[^1]: 译者注: 原文是”It is also perhaps surprising that about 1 in 20 such matrices is singular.”

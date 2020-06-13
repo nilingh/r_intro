@@ -12,4 +12,5 @@ UNIX 下面对以前用过命令的调用和编辑的键设置是可以修改的
 
 ---
 
-[^1]:译者注:当然Vi，UltraEdit也不错。我就用UltraEdit写 R 代码做蒙特卡罗模拟的。在http:// www.ultraedit.com/index.php?name=Content&pa=showpage&pid=40下载 R 的wordfile (“R Scripting - 02/18/2003”，具体可能会有些不同)，贴到你的UltraEdit 程序根目录下的wordfile.txt 文件中就行 了。这时候，自动会对 R 文件语法高亮显示。
+[^1]: 译者注：当然Vi，UltraEdit也不错。我就用UltraEdit写 R 代码做蒙特卡罗模拟的。在http:// www.ultraedit.com/index.php?name=Content&pa=showpage&pid=40下载 R 的wordfile (“R Scripting - 02/18/2003”，具体可能会有些不同)，贴到你的UltraEdit 程序根目录下的wordfile.txt 文件中就行 了。这时候，自动会对 R 文件语法高亮显示。
+

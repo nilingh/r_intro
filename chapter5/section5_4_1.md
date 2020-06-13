@@ -16,4 +16,4 @@
 
 ---
 
-[^1]:译者注：原文为”As long as short vectors and arrays only are encountered, the arrays must all have the same dim attribute or an error results.”
+[^1]: 译者注：原文为”As long as short vectors and arrays only are encountered, the arrays must all have the same dim attribute or an error results.”
