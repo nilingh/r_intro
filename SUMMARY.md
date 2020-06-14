@@ -95,3 +95,12 @@
     * [10.7 作用域](chapter10/section10_7.md)
     * [10.8 定制环境](chapter10/section10_8.md)
     * [10.9 类，泛型函数和面向对象](chapter10/section10_9.md)
+* [11 R中的统计模型](chapter11/REAMDE_ch11.md)
+    * [11.1 定义统计模型的公式](chapter11/section11_1.md)
+        * [11.1.1 对照](chapter11/section11_1_1.md)
+    * [11.2 线性模型](chapter11/section11_2.md)
+    * [11.3 提取模型信息的泛型函数](chapter11/section11_3.md)
+    * [11.4 方差分析和模型比较](chapter11/section11_4.md)
+        * [11.4.1 方差分析表](chapter11/section11_4_1.md)
+    * [11.5 更新拟合模型](chapter11/section11_5.md)
+
