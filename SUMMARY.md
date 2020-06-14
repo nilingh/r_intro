@@ -110,5 +110,8 @@
         * [11.7.1 最小二乘法](chapter11/section11_7_1.md)
         * [11.7.2 最大似然法](chapter11/section11_7_2.md)
     * [11.8 一些非标准模型](chapter11/section11_8.md)
-    * 
-
+* [12 图形工具](chapter12/README_ch12.md)
+    * [12.1.1 plot() 函数](chapter12/section12_1_1.md)
+    * [12.1.2 显示多元数据](chapter12/section12_1_2.md)
+    * [12.1.3 图形显示](chapter12/section12_1_3.md)
+    * [12.1.4 高级图形命令的参数](chapter12/section12_1_4.md)
