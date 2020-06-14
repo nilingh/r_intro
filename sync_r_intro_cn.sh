@@ -16,3 +16,5 @@ git commit -m "add by script"
 
 # remote repo branch
 git push origin master
+
+echo 'Finished at ' `date`
