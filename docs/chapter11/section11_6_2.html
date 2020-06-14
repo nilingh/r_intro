@@ -1,0 +1,1805 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11.6.2 glm()函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section11_7.html" />
+    
+    
+    <link rel="prev" href="section11_6_1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../preface/README_pre.html">
+            
+                <a href="../preface/README_pre.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../preface/section0_2.html">
+            
+                <a href="../preface/section0_2.html">
+            
+                    
+                    译者前言一(摘自05年网页版)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../preface/section0_3.html">
+            
+                <a href="../preface/section0_3.html">
+            
+                    
+                    译者前言二(摘自PDF版)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1/README_ch1.html">
+            
+                <a href="../chapter1/README_ch1.html">
+            
+                    
+                    1 绪论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/section1_1.html">
+            
+                <a href="../chapter1/section1_1.html">
+            
+                    
+                    1.1 R 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/section1_2.html">
+            
+                <a href="../chapter1/section1_2.html">
+            
+                    
+                    1.2 R 相关软件和文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/section1_3.html">
+            
+                <a href="../chapter1/section1_3.html">
+            
+                    
+                    1.3 R 和统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter1/section1_4.html">
+            
+                <a href="../chapter1/section1_4.html">
+            
+                    
+                    1.4 R 和桌面系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter1/section1_5.html">
+            
+                <a href="../chapter1/section1_5.html">
+            
+                    
+                    1.5 交互式使用 R
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter1/section1_6.html">
+            
+                <a href="../chapter1/section1_6.html">
+            
+                    
+                    1.6 一个引导性的 R 会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter1/section1_7.html">
+            
+                <a href="../chapter1/section1_7.html">
+            
+                    
+                    1.7 通过函数和特征寻求帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter1/section1_8.html">
+            
+                <a href="../chapter1/section1_8.html">
+            
+                    
+                    1.8 R 命令，大小写敏感等
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter1/section1_9.html">
+            
+                <a href="../chapter1/section1_9.html">
+            
+                    
+                    1.9 重新调用和修正先前的命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../chapter1/section1_10.html">
+            
+                <a href="../chapter1/section1_10.html">
+            
+                    
+                    1.10 批处理文件和结果重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../chapter1/section1_11.html">
+            
+                <a href="../chapter1/section1_11.html">
+            
+                    
+                    1.11 永久数据和对象删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter2/README_ch2.html">
+            
+                <a href="../chapter2/README_ch2.html">
+            
+                    
+                    2 简单的算术操作和向量运算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter2/section2_1.html">
+            
+                <a href="../chapter2/section2_1.html">
+            
+                    
+                    2.1 向量和赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/section2_2.html">
+            
+                <a href="../chapter2/section2_2.html">
+            
+                    
+                    2.2 向量运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/section2_3.html">
+            
+                <a href="../chapter2/section2_3.html">
+            
+                    
+                    2.3 生成正则序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/section2_4.html">
+            
+                <a href="../chapter2/section2_4.html">
+            
+                    
+                    2.4 逻辑向量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter2/section2_5.html">
+            
+                <a href="../chapter2/section2_5.html">
+            
+                    
+                    2.5 缺损值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter2/section2_6.html">
+            
+                <a href="../chapter2/section2_6.html">
+            
+                    
+                    2.6 字符向量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter2/section2_7.html">
+            
+                <a href="../chapter2/section2_7.html">
+            
+                    
+                    2.7 索引向量；选出和修改一个数据集的子集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter2/section2_8.html">
+            
+                <a href="../chapter2/section2_8.html">
+            
+                    
+                    2.8 其他类型的对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3/README_ch3.html">
+            
+                <a href="../chapter3/README_ch3.html">
+            
+                    
+                    3 对象及它们的模式和属性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3/section3_1.html">
+            
+                <a href="../chapter3/section3_1.html">
+            
+                    
+                    3.1 内在属性：模式和长度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3/section3_2.html">
+            
+                <a href="../chapter3/section3_2.html">
+            
+                    
+                    3.2 改变对象长度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3/section3_3.html">
+            
+                <a href="../chapter3/section3_3.html">
+            
+                    
+                    3.3 读取和设置属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3/section3_4.html">
+            
+                <a href="../chapter3/section3_4.html">
+            
+                    
+                    3.4 对象的类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/README_ch4.html">
+            
+                <a href="../chapter4/README_ch4.html">
+            
+                    
+                    4 有序因子和无序因子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter4/section4_1.html">
+            
+                <a href="../chapter4/section4_1.html">
+            
+                    
+                    4.1 一个特别的例子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter4/section4_2.html">
+            
+                <a href="../chapter4/section4_2.html">
+            
+                    
+                    4.2 函数 tapply() 和不规则数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter4/section4_3.html">
+            
+                <a href="../chapter4/section4_3.html">
+            
+                    
+                    4.3 有序因子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter5/README_ch5.html">
+            
+                <a href="../chapter5/README_ch5.html">
+            
+                    
+                    5 数组和矩阵
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter5/section5_1.html">
+            
+                <a href="../chapter5/section5_1.html">
+            
+                    
+                    5.1 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter5/section5_2.html">
+            
+                <a href="../chapter5/section5_2.html">
+            
+                    
+                    5.2 数组索引以及数组分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter5/section5_3.html">
+            
+                <a href="../chapter5/section5_3.html">
+            
+                    
+                    5.3 索引数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../chapter5/section5_4.html">
+            
+                <a href="../chapter5/section5_4.html">
+            
+                    
+                    5.4 array() 函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../chapter5/section5_4_1.html">
+            
+                <a href="../chapter5/section5_4_1.html">
+            
+                    
+                    5.4.1 向量和数组混合运算以及循环使用原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../chapter5/section5_5.html">
+            
+                <a href="../chapter5/section5_5.html">
+            
+                    
+                    5.5 数组的外积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../chapter5/section5_6.html">
+            
+                <a href="../chapter5/section5_6.html">
+            
+                    
+                    5.6 数组的广义转置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../chapter5/section5_7.html">
+            
+                <a href="../chapter5/section5_7.html">
+            
+                    
+                    5.7 矩阵工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.7.1" data-path="../chapter5/section5_7_1.html">
+            
+                <a href="../chapter5/section5_7_1.html">
+            
+                    
+                    5.7.1 矩阵相乘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.2" data-path="../chapter5/section5_7_2.html">
+            
+                <a href="../chapter5/section5_7_2.html">
+            
+                    
+                    5.7.2 线性方程和求逆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.3" data-path="../chapter5/section5_7_3.html">
+            
+                <a href="../chapter5/section5_7_3.html">
+            
+                    
+                    5.7.3 特征值和特征向量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.4" data-path="../chapter5/section5_7_4.html">
+            
+                <a href="../chapter5/section5_7_4.html">
+            
+                    
+                    5.7.4 奇异值分解和行列式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7.5" data-path="../chapter5/section5_7_5.html">
+            
+                <a href="../chapter5/section5_7_5.html">
+            
+                    
+                    5.7.5 最小二乘法拟合和QR 分解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../chapter5/section5_8.html">
+            
+                <a href="../chapter5/section5_8.html">
+            
+                    
+                    5.8 用cbind() 和rbind() 构建分块矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../chapter5/section5_9.html">
+            
+                <a href="../chapter5/section5_9.html">
+            
+                    
+                    5.9 对数组实现连接操作的函数c()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../chapter5/section5_10.html">
+            
+                <a href="../chapter5/section5_10.html">
+            
+                    
+                    5.10 因子的频率表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter6/README_ch6.html">
+            
+                <a href="../chapter6/README_ch6.html">
+            
+                    
+                    6 列表和数据框
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter6/section6_1.html">
+            
+                <a href="../chapter6/section6_1.html">
+            
+                    
+                    6.1 列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter6/section6_2.html">
+            
+                <a href="../chapter6/section6_2.html">
+            
+                    
+                    6.2 构建和修改列表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../chapter6/section6_2_1.html">
+            
+                <a href="../chapter6/section6_2_1.html">
+            
+                    
+                    6.2.1 列表连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter6/section6_3.html">
+            
+                <a href="../chapter6/section6_3.html">
+            
+                    
+                    6.3 数据框
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../chapter6/section6_3_1.html">
+            
+                <a href="../chapter6/section6_3_1.html">
+            
+                    
+                    6.3.1 创建数据框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../chapter6/section6_3_2.html">
+            
+                <a href="../chapter6/section6_3_2.html">
+            
+                    
+                    6.3.2 attach() 和 detach()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="../chapter6/section6_3_3.html">
+            
+                <a href="../chapter6/section6_3_3.html">
+            
+                    
+                    6.3.3 使用数据框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.4" data-path="../chapter6/section6_3_4.html">
+            
+                <a href="../chapter6/section6_3_4.html">
+            
+                    
+                    6.3.4 绑定任意的列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.5" data-path="../chapter6/section6_3_5.html">
+            
+                <a href="../chapter6/section6_3_5.html">
+            
+                    
+                    6.3.5 管理搜索路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter7/README_ch7.html">
+            
+                <a href="../chapter7/README_ch7.html">
+            
+                    
+                    7 从文件中读取数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter7/section7_1.html">
+            
+                <a href="../chapter7/section7_1.html">
+            
+                    
+                    7.1 read.table()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter7/section7_2.html">
+            
+                <a href="../chapter7/section7_2.html">
+            
+                    
+                    7.2 scan()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter7/section7_3.html">
+            
+                <a href="../chapter7/section7_3.html">
+            
+                    
+                    7.3 访问内置数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="../chapter7/section7_3_1.html">
+            
+                <a href="../chapter7/section7_3_1.html">
+            
+                    
+                    7.3.1 从其他R 包里面导入数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter7/section7_4.html">
+            
+                <a href="../chapter7/section7_4.html">
+            
+                    
+                    7.4 编辑数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter8/README_ch8.html">
+            
+                <a href="../chapter8/README_ch8.html">
+            
+                    
+                    8 概率分布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter8/section8_1.html">
+            
+                <a href="../chapter8/section8_1.html">
+            
+                    
+                    8.1 R 的统计表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter8/section8_2.html">
+            
+                <a href="../chapter8/section8_2.html">
+            
+                    
+                    8.2 检验一个数据集的分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter8/section8_3.html">
+            
+                <a href="../chapter8/section8_3.html">
+            
+                    
+                    8.3 单样本和双样本检验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter9/README_ch9.html">
+            
+                <a href="../chapter9/README_ch9.html">
+            
+                    
+                    9 成组，循环和条件控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter9/section9_1.html">
+            
+                <a href="../chapter9/section9_1.html">
+            
+                    
+                    9.1 成组表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../chapter9/section9_2.html">
+            
+                <a href="../chapter9/section9_2.html">
+            
+                    
+                    9.2 控制语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.2.1" data-path="../chapter9/section9_2_1.html">
+            
+                <a href="../chapter9/section9_2_1.html">
+            
+                    
+                    9.2.1 条件控制：if语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2.2" data-path="../chapter9/section9_2_2.html">
+            
+                <a href="../chapter9/section9_2_2.html">
+            
+                    
+                    9.2.2 循环控制：for循环，repeat和while
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter10/README_ch10.html">
+            
+                <a href="../chapter10/README_ch10.html">
+            
+                    
+                    10 编写函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter10/section10_1.html">
+            
+                <a href="../chapter10/section10_1.html">
+            
+                    
+                    10.1 一个简单的例子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter10/section10_2.html">
+            
+                <a href="../chapter10/section10_2.html">
+            
+                    
+                    10.2 定义新的二元操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter10/section10_3.html">
+            
+                <a href="../chapter10/section10_3.html">
+            
+                    
+                    10.3 参数命名和默认值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter10/section10_4.html">
+            
+                <a href="../chapter10/section10_4.html">
+            
+                    
+                    10.4 ... 参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../chapter10/section10_5.html">
+            
+                <a href="../chapter10/section10_5.html">
+            
+                    
+                    10.5 在函数中赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../chapter10/section10_6.html">
+            
+                <a href="../chapter10/section10_6.html">
+            
+                    
+                    10.6 更多高级的例子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.6.1" data-path="../chapter10/section10_6_1.html">
+            
+                <a href="../chapter10/section10_6_1.html">
+            
+                    
+                    10.6.1 区组设计中的效率因子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6.2" data-path="../chapter10/section10_6_2.html">
+            
+                <a href="../chapter10/section10_6_2.html">
+            
+                    
+                    10.6.2 去除打印数组中的名字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6.3" data-path="../chapter10/section10_6_3.html">
+            
+                <a href="../chapter10/section10_6_3.html">
+            
+                    
+                    10.6.3 递归式的数值积分
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../chapter10/section10_7.html">
+            
+                <a href="../chapter10/section10_7.html">
+            
+                    
+                    10.7 作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../chapter10/section10_8.html">
+            
+                <a href="../chapter10/section10_8.html">
+            
+                    
+                    10.8 定制环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../chapter10/section10_9.html">
+            
+                <a href="../chapter10/section10_9.html">
+            
+                    
+                    10.9 类，泛型函数和面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="REAMDE_ch11.md">
+            
+                <span>
+            
+                    
+                    11 R中的统计模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="section11_1.html">
+            
+                <a href="section11_1.html">
+            
+                    
+                    11.1 定义统计模型的公式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1.1" data-path="section11_1_1.html">
+            
+                <a href="section11_1_1.html">
+            
+                    
+                    11.1.1 对照
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="section11_2.html">
+            
+                <a href="section11_2.html">
+            
+                    
+                    11.2 线性模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="section11_3.html">
+            
+                <a href="section11_3.html">
+            
+                    
+                    11.3 提取模型信息的泛型函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="section11_4.html">
+            
+                <a href="section11_4.html">
+            
+                    
+                    11.4 方差分析和模型比较
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.4.1" data-path="section11_4_1.html">
+            
+                <a href="section11_4_1.html">
+            
+                    
+                    11.4.1 方差分析表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="section11_5.html">
+            
+                <a href="section11_5.html">
+            
+                    
+                    11.5 更新拟合模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="section11_6.html">
+            
+                <a href="section11_6.html">
+            
+                    
+                    11.6 广义线性模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.6.1" data-path="section11_6_1.html">
+            
+                <a href="section11_6_1.html">
+            
+                    
+                    11.6.1 族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14.6.2" data-path="section11_6_2.html">
+            
+                <a href="section11_6_2.html">
+            
+                    
+                    11.6.2 glm()函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="section11_7.html">
+            
+                <a href="section11_7.html">
+            
+                    
+                    11.7 非线性最小二乘法和最大似然法模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.7.1" data-path="section11_7_1.html">
+            
+                <a href="section11_7_1.html">
+            
+                    
+                    11.7.1 最小二乘法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7.2" data-path="section11_7_2.html">
+            
+                <a href="section11_7_2.html">
+            
+                    
+                    11.7.2 最大似然法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.8" data-path="section11_8.html">
+            
+                <a href="section11_8.html">
+            
+                    
+                    11.8 一些非标准模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11.6.2 glm()函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1162-glm&#x51FD;&#x6570;">11.6.2 glm()&#x51FD;&#x6570;</h1>
+<p>&#x65E2;&#x7136;&#x54CD;&#x5E94;&#x7684;&#x5206;&#x5E03;&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x5355;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x7EBF;&#x6027;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;&#x523A;&#x6FC0;&#x53D8;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x7528;&#x4E8E;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x7684;&#x673A;&#x5236;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5E7F;&#x4E49;&#x6A21;&#x578B;&#x7684;&#x7EBF;&#x6027;&#x90E8;&#x5206;&#x3002;&#x4F46;&#x662F;&#x65CF;&#x5FC5;&#x987B;&#x4EE5;&#x4E00;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6307;&#x5B9A;&#x3002;</p>
+<p>R &#x7528;&#x4E8E;&#x5E7F;&#x4E49;&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x7684;&#x51FD;&#x6570;&#x662F; <code>glm()</code>&#xFF0C;&#x5B83;&#x7684;&#x4F7F;&#x7528;&#x5F62;&#x5F0F;&#x4E3A;</p>
+<pre><code class="lang-R">&gt; fitted.model &lt;- glm(formula, family=family.generator, data=data.frame)
+</code></pre>
+<p>&#x548C; <code>lm()</code> &#x76F8;&#x6BD4;&#xFF0C;&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x7279;&#x6027;&#x5C31;&#x662F;&#x63CF;&#x8FF0;&#x65CF;&#x7684;&#x53C2;&#x6570; <code>family.generator</code>&#x3002;&#x5B83;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x548C;&#x8868;&#x8FBE;&#x5F0F;&#x5217;&#x8868;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x548C;&#x63A7;&#x5236;&#x6A21;&#x578B;&#x7684;&#x6784;&#x5EFA;&#x4E0E;&#x4F30;&#x8BA1;&#x8FC7;&#x7A0B;<sup><a href="#fn_1" id="reffn_1">1</a></sup>&#x3002;&#x5C3D;&#x7BA1;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x5F00;&#x59CB;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x540D;&#x5B57;&#x662F;&#x6807;&#x51C6;&#x7684;&#x3002;&#x7A0B;&#x5E8F;&#x7ED9;&#x5B9A;&#x7684;&#x65CF;&#x751F;&#x6210;&#x5668;&#x53EF;&#x4EE5;&#x53C2;&#x89C1;&#x65CF;&#x90E8;&#x5206;&#x8868;&#x683C;&#x4E2D;&#x7684;&#x201C;&#x65CF;&#x540D;&#x201D;&#x3002;&#x5F53;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8BE5;&#x5173;&#x8054;&#x51FD;&#x6570;&#x540D;&#x548C;&#x65CF;&#x540D;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5728;&#x62EC;&#x5F27;&#x91CC;&#x9762;&#x4F5C;&#x4E3A;&#x53C2; &#x6570;&#x8BBE;&#x5B9A;&#x3002;&#x5728;&#x62DF;(quasi)&#x5BB6;&#x65CF;&#x91CC;&#x9762;&#xFF0C;&#x65B9;&#x5DEE;&#x51FD;&#x6570;&#x4E5F;&#x662F;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x8BBE;&#x5B9A;&#x3002;</p>
+<p>&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x66F4;&#x6E05;&#x695A;&#x3002;</p>
+<h6 id="gaussian&#x65CF;">Gaussian&#x65CF;</h6>
+<p>&#x547D;&#x4EE4;</p>
+<pre><code class="lang-R">&gt; fm &lt;- glm(y ~ x1 + x2, family = gaussian, data = sales)
+</code></pre>
+<p>&#x548C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x7ED3;&#x679C;&#x4E00;&#x81F4;</p>
+<pre><code class="lang-R">&gt; fm &lt;- lm(y ~ x1+x2, data=sales)
+</code></pre>
+<p>&#x4F46;&#x662F;&#x6548;&#x7387;&#x4E0A;&#xFF0C;&#x524D;&#x8005;&#x5DEE;&#x4E00;&#x70B9;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x9AD8;&#x65AF;&#x65CF;&#x6CA1;&#x6709;&#x81EA;&#x52A8;&#x63D0;&#x4F9B;&#x5173;&#x8054;&#x51FD;&#x6570;&#x8BBE;&#x5B9A;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x5141;&#x8BB8;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x5982;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x9700;&#x8981;&#x7528;&#x975E;&#x6807;&#x51C6;&#x5173;&#x8054;&#x51FD;&#x6570;&#x7684;&#x9AD8;&#x65AF;&#x65CF;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x91C7;&#x7528;&#x6211;&#x4EEC;&#x540E;&#x9762;&#x8BA8;&#x8BBA;&#x7684;&#x62DF;&#x65CF;&#x3002;</p>
+<h6 id="&#x4E8C;&#x9879;&#x5F0F;&#x65CF;">&#x4E8C;&#x9879;&#x5F0F;&#x65CF;</h6>
+<p>&#x8003;&#x8651;Silvey (1970) &#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x4EBA;&#x9020;&#x7684;&#x5C0F;&#x4F8B;&#x5B50;&#x3002;</p>
+<p>&#x5728;Kalythos&#x7684;Aegean&#x5C9B;&#x4E0A;&#xFF0C;&#x7537;&#x6027;&#x5C45;&#x6C11;&#x5E38;&#x5E38;&#x60A3;&#x6709;&#x4E00;&#x79CD;&#x5148;&#x5929;&#x7684;&#x773C;&#x79D1;&#x75BE;&#x75C5;&#xFF0C;&#x5E76;&#x4E14;&#x968F;&#x7740;&#x5E74;&#x9F84;&#x7684;&#x589E;&#x957F;&#x800C;&#x53D8;&#x7684;&#x6108;&#x660E;&#x663E;&#x3002;&#x73B0;&#x5728;&#x641C;&#x96C6;&#x4E86;&#x5404;&#x79CD;&#x5E74;&#x9F84;&#x6BB5;&#x5C9B;&#x4E0A;&#x7537;&#x6027;&#x5C45;&#x6C11;&#x7684;&#x6837;&#x672C;&#xFF0C;&#x540C;&#x65F6;&#x8BB0;&#x5F55;&#x4E86;&#x76F2;&#x773C;&#x7684;&#x6570;&#x76EE;&#x3002;&#x6570;&#x636E;&#x5C55;&#x793A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Age:</th>
+<th>20</th>
+<th>35</th>
+<th>45</th>
+<th>55</th>
+<th>70</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No. tested:</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+</tr>
+<tr>
+<td>No. blind:</td>
+<td>6</td>
+<td>17</td>
+<td>26</td>
+<td>37</td>
+<td>44</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6211;&#x4EEC;&#x60F3;&#x77E5;&#x9053;&#x7684;&#x662F;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x662F;&#x5426;&#x543B;&#x5408;logistic&#x548C;probit&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x5206;&#x522B;&#x4F30;&#x8BA1;&#x5404;&#x4E2A;&#x6A21;&#x578B;&#x7684;LD50&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7537;&#x6027;&#x5C45;&#x6C11;&#x76F2;&#x773C;&#x7684;&#x6982;&#x7387;&#x4E3A;50%&#x65F6;&#x5019;&#x7684;&#x5E74;&#x9F84;&#x3002;</p>
+<p>&#x5982;&#x679C; $y$ &#x548C; $n$ &#x5206;&#x522B;&#x662F;&#x5E74;&#x9F84;&#x4E3A; $x$ &#x65F6;&#x7684;&#x76F2;&#x773C;&#x6570;&#x76EE;&#x548C;&#x68C0;&#x6D4B;&#x6837;&#x672C;&#x6570;&#x76EE;&#xFF0C;&#x4E24;&#x79CD;&#x6A21;&#x578B;&#x7684;&#x5F62;&#x5F0F;&#x90FD;&#x4E3A; $y \sim B(n, F (\beta_0 + \beta_1x))$&#x3002;&#x5176;&#x4E2D;&#x5728;probit&#x6A21;&#x578B;&#x4E2D;&#xFF0C;$F(z) = \Phi(z)$ &#x662F;&#x6807;&#x51C6;&#x7684;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x5728;logit&#x6A21;&#x578B;(&#x9ED8;&#x8BA4;)&#x4E2D;&#xFF0C;$F(z) = \frac{e^z}{(1 + ez^)}$&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;$LD50 = &#x2212;\frac{\beta_0}{\beta_1}$&#xFF0C;&#x5373;&#x5206;&#x5E03;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E3A;0&#x65F6;&#x6240;&#x5728;&#x7684;&#x70B9;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x628A;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x636E;&#x6846;&#xFF0C;</p>
+<pre><code class="lang-R">&gt; kalythos &lt;- data.frame(x = c(<span class="hljs-number">20</span>,<span class="hljs-number">35</span>,<span class="hljs-number">45</span>,<span class="hljs-number">55</span>,<span class="hljs-number">70</span>), n = rep(<span class="hljs-number">50</span>,<span class="hljs-number">5</span>),
+                         y = c(<span class="hljs-number">6</span>,<span class="hljs-number">17</span>,<span class="hljs-number">26</span>,<span class="hljs-number">37</span>,<span class="hljs-number">44</span>))
+</code></pre>
+<p>&#x5728; <code>glm()</code> &#x62DF;&#x5408;&#x4E8C;&#x9879;&#x5F0F;&#x6A21;&#x578B;&#x65F6;&#xFF0C;&#x54CD;&#x5E94;&#x53D8;&#x91CF;&#x6709;&#x4E09;&#x79CD;&#x53EF;&#x80FD;&#x6027;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x54CD;&#x5E94;&#x53D8;&#x91CF;&#x662F;&#x5411;&#x91CF;&#xFF0C;&#x5219;&#x5047;&#x5B9A;&#x64CD;&#x4F5C;<em>&#x4E8C;&#x5143;(binary)&#x6570;&#x636E;</em>&#xFF0C;&#x56E0;&#x6B64;&#x8981;&#x6C42;&#x662F;<em>0/1</em>&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x54CD;&#x5E94;&#x53D8;&#x91CF;&#x662F;<em>&#x53CC;&#x5217;&#x77E9;&#x9635;</em>&#xFF0C;&#x5219;&#x5047;&#x5B9A;&#x7B2C;&#x4E00;&#x5217;&#x4E3A;&#x8BD5;&#x9A8C;&#x6210;&#x529F;&#x7684;&#x6B21;&#x6570;&#x7B2C;&#x4E8C;&#x5217;&#x4E3A;&#x8BD5;&#x9A8C;&#x5931;&#x8D25;&#x7684;&#x6B21;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x54CD;&#x5E94;&#x53D8;&#x91CF;&#x662F;<em>&#x56E0;&#x5B50;</em>&#xFF0C;&#x5219;&#x7B2C;&#x4E00;&#x6C34;&#x5E73;&#x4F5C;&#x4E3A;&#x5931;&#x8D25;(0)&#x8003;&#x8651;&#x800C;&#x5176;&#x4ED6;&#x7684;&#x4F5C;&#x4E3A;&#x2018;&#x6210;&#x529F;&#x2019;(1)&#x8003;&#x8651;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x7684;&#x662F;&#x7B2C;&#x4E8C;&#x79CD;&#x60EF;&#x4F8B;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x6570;&#x636E;&#x6846;&#x4E2D;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x77E9;&#x9635;&#xFF1A;</p>
+<pre><code class="lang-R">&gt; kalythos$Ymat &lt;- cbind(kalythos$y, kalythos$n - kalythos$y)
+</code></pre>
+<p>  &#x4E3A;&#x4E86;&#x62DF;&#x5408;&#x8FD9;&#x4E9B;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;</p>
+<pre><code class="lang-R">&gt; fmp &lt;- glm(Ymat ~ x, family = binomial(link=probit), data = kalythos) 
+&gt; fml &lt;- glm(Ymat ~ x, family = binomial, data = kalythos)
+</code></pre>
+<p>&#x65E2;&#x7136;logit&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x7B2C;&#x4E8C;&#x6761;&#x547D;&#x4EE4;&#x4E2D;&#x7701;&#x7565;&#x8BE5;&#x53C2;&#x6570;&#x3002;&#x4E3A;&#x4E86;&#x67E5;&#x770B;&#x62DF;&#x5408;&#x7ED3;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-R">&gt; summary(fmp)
+&gt; summary(fml)
+</code></pre>
+<p>&#x4E24;&#x79CD;&#x6A21;&#x578B;&#x90FD;&#x62DF;&#x5408;&#x7684;&#x5F88;&#x597D;&#x3002;&#x4E3A;&#x4E86;&#x8BA1;&#x7B97;LD50&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-R">&gt; ld50 &lt;- <span class="hljs-keyword">function</span>(b) -b[<span class="hljs-number">1</span>]/b[<span class="hljs-number">2</span>]
+&gt; ldp &lt;- ld50(coef(fmp)); ldl &lt;- ld50(coef(fml)); c(ldp, ldl)
+</code></pre>
+<p>&#x4ECE;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x4E2D;&#x5F97;&#x5230;&#x7684;&#x5E74;&#x9F84;&#x5206;&#x522B;&#x662F;43.663&#x5E74;&#x548C;43.601&#x5E74;&#x3002;</p>
+<h6 id="poisson&#x6A21;&#x578B;">Poisson&#x6A21;&#x578B;</h6>
+<p>Poisson&#x65CF;&#x9ED8;&#x8BA4;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x662F; <code>log</code>&#x3002;&#x5728;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E00;&#x65CF;&#x5E38;&#x5E38;&#x7528;&#x4E8E;&#x62DF;&#x5408;&#x8BA1;&#x6570;&#x8D44;&#x6599;&#x7684;Poisson&#x5BF9;&#x6570;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x3002;&#x8FD9;&#x4E9B;&#x8BA1;&#x6570;&#x8D44;&#x6599;&#x7684;&#x5B9E;&#x9645;&#x5206;&#x5E03;&#x5F80;&#x5F80;&#x7B26;&#x5408;&#x4E8C;&#x9879;&#x5F0F;&#x5206;&#x5E03;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x800C;&#x53C8;&#x5E9E;&#x5927;&#x7684;&#x8BDD;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x60F3;&#x5728;&#x8FD9;&#x91CC;&#x6DF1;&#x5165;&#x5C55;&#x5F00;&#x3002;&#x5B83;&#x751A;&#x81F3;&#x662F;&#x975E;-&#x9AD8;&#x65AF;&#x5E7F;&#x4E49;&#x6A21;&#x578B;&#x5185;&#x5BB9;&#x7684;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x5B9E;&#x8DF5;&#x4E2D;&#x4EA7;&#x751F;&#x7684;Poisson &#x6570;&#x636E;&#x5728;&#x5BF9;&#x6570;&#x6216;&#x8005;&#x5E73;&#x65B9;&#x6839;&#x8F6C;&#x5316;&#x540E;&#x53EF;&#x5F53;&#x4F5C;&#x6B63;&#x6001;&#x6570;&#x636E;&#x5904;&#x7406;&#x3002;&#x4F5C;&#x4E3A;&#x540E;&#x8005;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x9009;&#x62E9;&#x662F;&#xFF0C;&#x4E00;&#x4E2A;Poisson&#x5E7F;&#x4E49;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x62DF;&#x5408;&#xFF1A;</p>
+<pre><code class="lang-R">&gt; fmod &lt;- glm(y ~ A + B + x, family = poisson(link=sqrt),
+              data = worm.counts)
+</code></pre>
+<h6 id="&#x62DF;&#x4F3C;&#x7136;&#x6A21;&#x578B;">&#x62DF;&#x4F3C;&#x7136;&#x6A21;&#x578B;</h6>
+<p>&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x65CF;&#xFF0C;&#x54CD;&#x5E94;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5DEE;&#x4F9D;&#x8D56;&#x4E8E;&#x5747;&#x503C;&#x5E76;&#x4E14;&#x62E5;&#x6709;&#x4F5C;&#x4E3A;&#x4E58;&#x6570;(multiplier) &#x7684;&#x5C3A;&#x5EA6;&#x53C2;&#x6570;&#x3002;&#x65B9;&#x5DEE;&#x5BF9;&#x5747;&#x503C;&#x7684;&#x4F9D;&#x8D56;&#x65B9;&#x5F0F;&#x662F;&#x54CD;&#x5E94;&#x5206;&#x5E03;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#xFF1B;&#x4F8B;&#x5982;&#x5BF9;&#x4E8E;poisson&#x5206;&#x5E03; $Var[y] = \mu$&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x62DF;&#x4F3C;&#x7136;&#x4F30;&#x8BA1;&#x548C;&#x63A8;&#x65AD;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x662F;&#x8BBE;&#x5B9A;&#x7CBE;&#x786E;&#x7684;&#x54CD;&#x5E94;&#x5206;&#x5E03;&#x800C;&#x662F;&#x8BBE;&#x5B9A;&#x5173;&#x8054;&#x51FD;&#x6570;&#x548C;&#x65B9;&#x5DEE;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;&#x5173;&#x8054;&#x51FD;&#x6570;&#x548C;&#x65B9;&#x5DEE;&#x51FD;&#x6570;&#x90FD;&#x4F9D;&#x8D56;&#x4E8E;&#x5747;&#x503C;&#x3002;&#x65E2;&#x7136;&#x62DF;&#x4F3C;&#x7136;&#x4F30;&#x8BA1;&#x548C;gaussian&#x5206;&#x5E03;&#x4F7F;&#x7528;&#x7684;&#x6280;&#x672F;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E00;&#x65CF;&#x987A;&#x5E26;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7528;&#x975E;&#x6807;&#x51C6;&#x5173;&#x8054;&#x51FD;&#x6570;&#x6216;&#x8005;&#x65B9;&#x5DEE;&#x51FD;&#x6570;&#x62DF;&#x5408;gaussian&#x6A21;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x975E;&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x7684;&#x62DF;&#x5408;</p>
+<p>$y = \frac{\theta_1 z_1} {(z_2 - \theta_2)} + e$</p>
+<p>&#x540C;&#x6837;&#x8FD8;&#x53EF;&#x4EE5;&#x5199;&#x6210;</p>
+<p>$y = \frac{1} {(\beta_1 x_1 + \beta_2 x_2) }+ e$&#xFF0C;&#x5176;&#x4E2D; $x_1 = \frac{z_2}{z_1}, x_2 = \frac{-1}{z_1}, \beta_1 = \frac{1}{\theta_1}, and\ \beta_2 = \frac{\theta_2}{\theta_1}$&#x3002;&#x5047;&#x5982;&#x6709;&#x9002;&#x5408;&#x7684;&#x6570;&#x636E;&#x6846;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x8FDB;&#x884C;&#x975E;&#x7EBF;&#x6027;&#x62DF;&#x5408;</p>
+<pre><code class="lang-R">&gt; nlfit &lt;- glm(y ~ x1 + x2 - <span class="hljs-number">1</span>,
+               family = quasi(link=inverse, variance=constant),
+               data = biochem)
+</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF0C;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x4ECE;&#x5176;&#x4ED6;&#x624B;&#x518C;&#x6216;&#x8005;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#x4E2D;&#x5F97;&#x5230;&#x66F4;&#x591A;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. &#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x539F;&#x6587;&#x4E3A;: &#x201C;The only new feature is the family.generator, which is the instrument by which the family is described. It is the name of a function that generates a list of functions and expressions that together define and control the model and estimation process.&#x201D;<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section11_6_1.html" class="navigation navigation-prev " aria-label="Previous page: 11.6.1 族">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section11_7.html" class="navigation navigation-next " aria-label="Next page: 11.7 非线性最小二乘法和最大似然法模型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11.6.2 glm()函数","level":"1.14.6.2","depth":3,"next":{"title":"11.7 非线性最小二乘法和最大似然法模型","level":"1.14.7","depth":2,"path":"chapter11/section11_7.md","ref":"chapter11/section11_7.md","articles":[{"title":"11.7.1 最小二乘法","level":"1.14.7.1","depth":3,"path":"chapter11/section11_7_1.md","ref":"chapter11/section11_7_1.md","articles":[]},{"title":"11.7.2 最大似然法","level":"1.14.7.2","depth":3,"path":"chapter11/section11_7_2.md","ref":"chapter11/section11_7_2.md","articles":[]}]},"previous":{"title":"11.6.1 族","level":"1.14.6.1","depth":3,"path":"chapter11/section11_6_1.md","ref":"chapter11/section11_6_1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter11/section11_6_2.md","mtime":"2020-06-14T08:24:47.766Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-14T09:19:23.828Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

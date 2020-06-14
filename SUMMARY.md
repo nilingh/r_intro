@@ -103,4 +103,12 @@
     * [11.4 方差分析和模型比较](chapter11/section11_4.md)
         * [11.4.1 方差分析表](chapter11/section11_4_1.md)
     * [11.5 更新拟合模型](chapter11/section11_5.md)
+    * [11.6 广义线性模型](chapter11/section11_6.md)
+        * [11.6.1 族](chapter11/section11_6_1.md)
+        * [11.6.2 glm()函数](chapter11/section11_6_2.md)
+    * [11.7 非线性最小二乘法和最大似然法模型](chapter11/section11_7.md)
+        * [11.7.1 最小二乘法](chapter11/section11_7_1.md)
+        * [11.7.2 最大似然法](chapter11/section11_7_2.md)
+    * [11.8 一些非标准模型](chapter11/section11_8.md)
+    * 
 
