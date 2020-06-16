@@ -123,3 +123,13 @@
     * [12.4 使用图形参数](chapter12/section12_4.md)
         * [12.4.1 永久性地改变：par() 函数](chapter12/section12_4_1.md)
         * [12.4.2 临时性地改变：图形函数的参数](chapter12/section12_4_2.md)
+    * [12.5 图形参数列表](chapter12/section12_5.md)
+        * [12.5.1 图形元素](chapter12/section12_5_1.md)
+        * [12.5.2 轴和刻度](chapter12/section12_5_2.md)
+        * [12.5.3 图片边缘](chapter12/section12_5_3.md)
+        * [12.5.4 多重图形环境](chapter12/section12_5_4.md)
+    * [12.6 设备驱动](chapter12/section12_6.md)
+        * [12.6.1 排版文档用的PostScript 图表](chapter12/section12_6_1.md)
+        * [12.6.2 多重图形设备](chapter12/section12_6_2.md)
+    * [12.7 动态图形](chapter12/section12_7.md)
+
